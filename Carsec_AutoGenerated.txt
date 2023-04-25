@@ -1,0 +1,31 @@
+CARSECN 
+* Tipo de seccion 
+secc horm 
+* Unidades a emplear. Opciones: tm - knm - lbin
+unid tm 
+* Normativa a emplear. Opciones: ehe  asashto 
+norm ehe 
+* Coeficientes de seguridad EHE o coeficientes phi AASHTO. No es obligatoria 
+coef horm 1.5 arma 1.15 pret 1.15 
+phi 0.75 0.9 
+* Puntos 
+punt 
+1 0.0 0.0 
+2 2.0 0.0 
+3 2.0 2.0 
+4 0.0 2.0 
+5 1.0 1.0 
+6 0.05 0.05 
+7 2.0 2000.0 
+* Definición del hormigón: fck, modulo de elasticidad. Este último es obligatorio 
+hc5 0.05 
+* Definicion del acero pasivo: fyk 
+arma 51000 
+6 0.000314 
+6 7 10 0.000314 
+pret 1670000 1395000 
+6 0.000314 
+6 7 10 0.000314 
+calc dibu 
+-10 5 2 
+fin

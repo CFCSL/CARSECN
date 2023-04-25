@@ -1,0 +1,57 @@
+Prueba 1 
+* Tipo de seccion 
+secc defaultdict(<class 'dict'>, {}) 
+* Unidades a emplear. Opciones: tm - knm - lbin
+unid knm 
+* Normativa a emplear. Opciones: ehe  asashto 
+norm aashto 
+* Coeficientes de seguridad EHE o coeficientes phi AASHTO. No es obligatoria 
+coef horm 1.0 arma 1.0 pret 1.0 
+phi 0.75 0.9 
+* Puntos 
+punt 
+1 -1.5 -1.5 
+2 -1.5 1.5 
+3 1.5 1.5 
+4 1.5 -1.5 
+5 -13925.0 -13925.0 
+6 13925.0 -13925.0 
+7 -13925.0 13925.0 
+8 13925.0 13925.0 
+9 -0.9 12925.0 
+10 -0.6 12925.0 
+11 -0.3 12925.0 
+12 0.0 12925.0 
+13 0.3 12925.0 
+14 0.6 12925.0 
+15 0.9 12925.0 
+* Definición del hormigón: fck, modulo de elasticidad. Este último es obligatorio 
+horm 60000.0 
+1 2 3 4 
+* Definicion del acero pasivo: fyk 
+arma 500000.0 
+9 0.00285 
+10 0.00285 
+11 0.00285 
+12 0.00285 
+13 0.00285 
+14 0.00285 
+15 0.00285 
+5 6 28 0.0004903 
+7 8 28 0.0004903 
+pret 1674000.0 1674000.0 
+calc inte vert 
+10000.0 500.0 0.0 
+0.0 10000.0 0.0 
+-20000.0 20000.0 0.0 
+-20000.0 30000.0 0.0 
+-30000.0 40000.0 0.0 
+-40000.0 50000.0 0.0 
+-150000.0 100000.0 0.0 
+-200000.0 100000.0 0.0 
+-250000.0 1000.0 0.0 
+-400000.0 1000.0 0.0 
+10000.0 100.0 0.0 
+-20000.0 40000.0 0.0 
+-300000.0 100000.0 0.0 
+fin
