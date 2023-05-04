@@ -62,7 +62,7 @@ def generate_points_on_circle( radius, num_points,X0=0,Y0=0):
     excel_file = io.BytesIO()
     writer = pd.ExcelWriter(excel_file, engine='xlsxwriter')
     df_circle_points.to_excel(writer, index=False)
-    writer.save()
+    writer.close()
     excel_file.seek(0)
     
     # Create a download button for the Excel file
