@@ -62,7 +62,7 @@ def generate_points_on_circle( radius, num_points,X0=0,Y0=0):
     excel_file = io.BytesIO()
     writer = pd.ExcelWriter(excel_file, engine='xlsxwriter')
     df_circle_points.to_excel(writer, index=False)
-    writer.save()
+    writer.close()
     excel_file.seek(0)
     
     # Create a download button for the Excel file
@@ -133,8 +133,8 @@ def draw_poligon(df,input_points):
 
 st.write('To draw a circle')
 
-x0=st.number_input('input x0 of center point', value=float(0.0),min_value=float(-100))
-y0=st.number_input('input y0 of center point', value=float(0.0),min_value=float(-100))
+x0=st.number_input('input x0 of center point', value=float(0.00),min_value=float(-100))
+y0=st.number_input('input y0 of center point', value=float(0.00),min_value=float(-100))
 radius = st.number_input('Input radius of the circle', value=1.5, min_value=0.0)
 num_points=st.number_input('input number of points to draw', value=int(25), min_value=1)
 
